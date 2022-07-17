@@ -31,3 +31,35 @@ section {
 #section-1-paragraph {
     padding-bottom: 50px;
 }
+
+#section-2-div p {
+    color: gray;
+}
+
+#section-2-div h1 {
+    font-size: 40px;
+}
+
+#section-2-div-2 {
+    display: flex;
+
+}
+
+.section-2-padding {
+    padding: 40px;
+    background-color: rgb(247, 245, 245);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+#sec-2-margin {
+    margin-left: 350px;
+}
+
+#sec-2-color {
+    background-color: rgb(253, 218, 213);
+    border: 2px solid tomato;
+}
