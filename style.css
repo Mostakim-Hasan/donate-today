@@ -63,3 +63,87 @@ section {
     background-color: rgb(253, 218, 213);
     border: 2px solid tomato;
 }
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 450px;
+    background: #fff;
+    padding: 30px;
+    margin-left: 550px;
+}
+
+.wrapper .input-data {
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper .input-data input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+}
+
+.input-data input:focus~label .input-data input:valid~label {
+    transform: translateY(-20px);
+    font-size: 15px;
+    color: #4158d0;
+}
+
+
+.wrapper .input-data label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: gray;
+    padding-left: 140px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.wrapper .input-data .underline {
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    width: 100%;
+}
+
+.input-data .underline:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #4158d0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.input-data input:focus~.underline::before .input-data input:valid~.underline::before {
+    transform: scaleX(1);
+}
+
+#align a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-image: linear-gradient(orange, tomato);
+    border-radius: 5px;
+}
+
+.section-3 h1 {
+    font-size: 40px;
+}
+
+.section-3 {
+    margin-top: 100px;
+}
+
+.section-2 {
+    margin-top: 150px;
+}
